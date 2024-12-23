@@ -1,0 +1,102 @@
+body {
+    background-color: #2e2e2e;
+    font-family: 'Nunito', monospace;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+p {
+    font-size: 2.5rem;
+    opacity: .9;
+    color: gray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    text-align: justify;
+}
+
+#text {
+    margin: 40px 20px 20px 0;
+}
+
+.author {
+    margin: 0;
+    align-self: flex-end;
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+#input-user {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.letter {
+    transition: color 0.s ease transform 0s ease margin 0.s ease;
+}
+
+.letter.correct {
+    color: white;
+}
+
+.letter.incorrect {
+    color: red;
+}
+
+.letter.current {
+    transform: scale(1.1);
+    margin: 0 2px;
+    border-bottom: 2px solid yellow;
+    color: yellow;
+}
+
+
+#results {
+    display: grid;
+    grid-template-rows: 100px auto;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    align-items: start;
+    column-gap: 40px;
+    row-gap: 0;
+}
+
+#results div {
+    margin: 0;
+    padding: 0;
+}
+
+#results h2 {
+    font-size: 2.3rem;
+    grid-column: span 2;
+
+}
+
+#results p {
+    font-size: 1.8rem;
+    color: white;
+}
+
+#results span {
+    color: yellow;
+}
+
+#new-game {
+    margin: 10px 0px;
+    cursor: pointer;
+    width: 5rem;
+}
